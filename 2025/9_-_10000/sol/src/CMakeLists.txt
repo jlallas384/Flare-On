@@ -1,0 +1,11 @@
+add_executable(func_extract func_extract.cpp)
+add_executable(ops_extract ops_extract.cpp)
+add_executable(imports_extract imports_extract.cpp)
+add_executable(fn_num_extract fn_num_extract.cpp)
+add_executable(verify verify.cpp)
+
+target_link_libraries(func_extract PUBLIC common)
+target_link_libraries(ops_extract PUBLIC common)
+target_link_libraries(imports_extract PUBLIC common)
+target_link_libraries(fn_num_extract PUBLIC common)
+target_link_libraries(verify PUBLIC common)
